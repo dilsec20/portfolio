@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Dilip Kumar — Full-Stack Developer, Competitive Programmer & Cybersecurity Enthusiast. Explore my projects, skills, and achievements." />
+    <title>Dilip Kumar — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+
+<body>
+
+    <!-- Cursor Particle Tail -->
+    <div id="cursor-tail"></div>
+    <div class="cursor-aura"></div>
+
+    <!-- Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">DK<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">// Hello, World</p>
+            <h1 class="hero-name">
+                I'm <span class="gradient-text">Dilip Kumar</span>
+            </h1>
+            <div class="hero-title-wrapper">
+                <p class="hero-title">
+                    <span class="typed-text"></span>
+                </p>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value" data-count="1000" data-suffix="+">0</div>
+                    <div class="hero-stat-label">Problems Solved</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" data-count="1892" data-suffix="">0</div>
+                    <div class="hero-stat-label">LeetCode Rating</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" data-count="1723" data-suffix="">0</div>
+                    <div class="hero-stat-label">CodeChef Rating</div>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">⚡ View Projects</a>
+                <a href="cv.pdf" download class="btn btn-outline">📄 Download CV</a>
+                <a href="#contact" class="btn btn-outline">📬 Get In Touch</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse"></div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <div class="section-header reveal">
+            <span class="section-tag">// Who Am I</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text reveal-left">
+                <p>
+                    I'm <strong>Dilip Kumar</strong>, a B.Tech Computer Science student at
+                    <strong>Lovely Professional University</strong> with a relentless passion for
+                    solving problems and building products that matter.
+                </p>
+                <p>
+                    With <strong>1000+ DSA problems</strong> solved across LeetCode, Codeforces, and CodeChef,
+                    I thrive in competitive programming and algorithmic challenges. I bring the same intensity
+                    to full-stack development — crafting secure, optimized, and scalable web applications.
+                </p>
+                <p>
+                    When I'm not coding, I'm diving deep into <strong>cybersecurity and networking</strong>,
+                    exploring everything from ethical hacking to network protocols.
+                </p>
+
+                <div class="about-info-grid">
+                    <div class="about-info-item">
+                        <div class="about-info-label">Name</div>
+                        <div class="about-info-value">Dilip Kumar</div>
+                    </div>
+                    <div class="about-info-item">
+                        <div class="about-info-label">University</div>
+                        <div class="about-info-value">LPU, Punjab</div>
+                    </div>
+                    <div class="about-info-item">
+                        <div class="about-info-label">Degree</div>
+                        <div class="about-info-value">B.Tech CSE</div>
+                    </div>
+                    <div class="about-info-item">
+                        <div class="about-info-label">CGPA</div>
+                        <div class="about-info-value">8.5</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-image-wrapper reveal-right">
+                <div class="about-image-card">
+                    <div class="about-avatar">
+                        <!-- Place your photo as profile.jpg in d:\portfolio\ -->
+                        <img src="profile.jpg" alt="Dilip Kumar"
+                            onerror="this.style.display='none'; this.parentElement.textContent='DK';" />
+                    </div>
+                    <div class="floating-badge">⚡ 1000+ Problems</div>
+                    <div class="floating-badge">🏆 3★ CodeChef</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <div class="section-header reveal">
+            <span class="section-tag">// What I Know</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card reveal" style="transition-delay: 0.1s">
+                <span class="skill-icon">💻</span>
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.2s">
+                <span class="skill-icon">🧠</span>
+                <h3>Core Concepts</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">DSA</span>
+                    <span class="skill-tag">Competitive Programming</span>
+                    <span class="skill-tag">OOPs</span>
+                    <span class="skill-tag">Full-Stack Development</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.3s">
+                <span class="skill-icon">🗄️</span>
+                <h3>Databases</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.4s">
+                <span class="skill-icon">🔐</span>
+                <h3>Networking & Security</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">TCP/IP</span>
+                    <span class="skill-tag">Routing</span>
+                    <span class="skill-tag">VPN</span>
+                    <span class="skill-tag">Firewalls</span>
+                    <span class="skill-tag">TLS</span>
+                    <span class="skill-tag">Ethical Hacking</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.5s">
+                <span class="skill-icon">🖥️</span>
+                <h3>Systems & OS</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Windows</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.6s">
+                <span class="skill-icon">🛠️</span>
+                <h3>Platforms & Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">AWS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <span class="section-tag">// What I've Built</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">🚀</div>
+                    <div class="project-links">
+                        <a href="https://github.com/dilsec20/" target="_blank" rel="noopener" title="GitHub">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="https://www.acecoder.site/" target="_blank" rel="noopener" title="Live Demo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Placement Preparation Portal</h3>
+                    <span class="project-date">Jun 2025</span>
+                    <div class="project-desc">
+                        <li>Engineered a robust RESTful API handling authentication, problem management, and contest
+                            logic, secured with JWT and bcrypt password hashing.</li>
+                        <li>Solved the "Duplicate Data" migration challenge by writing custom PowerShell and Node.js
+                            migration scripts for seamless cloud database transfer.</li>
+                        <li>Optimized SQL queries for Leaderboard and Statistics endpoints to ensure low-latency
+                            responses even with growing datasets.</li>
+                        <li>Created a Contest Simulation system with automated timers, real-time score calculation, and
+                            edge case handling.</li>
+                    </div>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                        <span>REST APIs</span>
+                        <span>JWT</span>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reveal" style="transition-delay: 0.15s">
+                <div class="project-header">
+                    <div class="project-icon">🎮</div>
+                    <div class="project-links">
+                        <a href="https://github.com/dilsec20/" target="_blank" rel="noopener" title="GitHub">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener" title="Live Demo">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Gemini-Powered Rubik's Cube Simulator</h3>
+                    <span class="project-date">Oct 2025</span>
+                    <div class="project-desc">
+                        <li>Integrated Google Gemini API for a context-aware AI companion with real-time commentary,
+                            coaching tips, and algorithmic pattern generation.</li>
+                        <li>Implemented "Smart View-Aware" controls using 3D vector mathematics to map directional
+                            inputs to the cube's orientation relative to the camera.</li>
+                        <li>Designed a responsive, futuristic UI using glassmorphism and CSS animations for optimal
+                            performance across desktop and mobile.</li>
+                    </div>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>Gemini API</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>3D Math</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section id="achievements">
+        <div class="section-header reveal">
+            <span class="section-tag">// My Rankings</span>
+            <h2 class="section-title">Achievements</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="achievements-grid">
+            <a href="https://leetcode.com/u/reze_arc69/" target="_blank" rel="noopener" class="achievement-card reveal"
+                style="transition-delay: 0.1s">
+                <span class="achievement-icon">🏅</span>
+                <h3>LeetCode</h3>
+                <div class="achievement-rating" data-count="1892" data-suffix="">0</div>
+                <p class="achievement-label">Knight Badge</p>
+            </a>
+
+            <a href="https://www.codechef.com/users/cp_coder06" target="_blank" rel="noopener"
+                class="achievement-card reveal" style="transition-delay: 0.2s">
+                <span class="achievement-icon">⭐</span>
+                <h3>CodeChef</h3>
+                <div class="achievement-rating" data-count="1723" data-suffix="">0</div>
+                <p class="achievement-label">3★ Coder</p>
+            </a>
+
+            <a href="https://codeforces.com/profile/reze69arc" target="_blank" rel="noopener"
+                class="achievement-card reveal" style="transition-delay: 0.3s">
+                <span class="achievement-icon">🎯</span>
+                <h3>Codeforces</h3>
+                <div class="achievement-rating" data-count="1475" data-suffix="">0</div>
+                <p class="achievement-label">Specialist</p>
+            </a>
+        </div>
+
+        <div class="achievement-total reveal" style="transition-delay: 0.4s">
+            <div class="achievement-total-value" data-count="1000" data-suffix="+">0</div>
+            <p class="achievement-total-label">DSA Problems Solved across LeetCode, Codeforces, CodeChef & more</p>
+        </div>
+    </section>
+
+    <!-- ===== TRAINING & CERTS ===== -->
+    <section id="certifications">
+        <div class="section-header reveal">
+            <span class="section-tag">// Learning Journey</span>
+            <h2 class="section-title">Training & Certifications</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="certs-grid">
+            <div class="cert-card reveal" style="transition-delay: 0.1s">
+                <span class="cert-badge">🎓</span>
+                <h3>DSA Summer Bootcamp</h3>
+                <p class="cert-issuer">CodeQuest — Lovely Professional University</p>
+                <p class="cert-date">Jul 2025</p>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay: 0.2s">
+                <span class="cert-badge">🔓</span>
+                <h3>Ethical Hacking</h3>
+                <p class="cert-issuer">NPTEL</p>
+                <p class="cert-date">Oct 2025</p>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay: 0.3s">
+                <span class="cert-badge">🌐</span>
+                <h3>Fundamentals of Network Communication</h3>
+                <p class="cert-issuer">Coursera</p>
+                <p class="cert-date">Oct 2024</p>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay: 0.4s">
+                <span class="cert-badge">🖥️</span>
+                <h3>Introduction to Hardware and Operating Systems</h3>
+                <p class="cert-issuer">Coursera</p>
+                <p class="cert-date">Sep 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education">
+        <div class="section-header reveal">
+            <span class="section-tag">// Where I Studied</span>
+            <h2 class="section-title">Education</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <span class="timeline-date">Aug 2023 — Present</span>
+                <h3>Bachelor of Technology — CSE</h3>
+                <p>Lovely Professional University, Phagwara, Punjab</p>
+                <span class="timeline-grade">CGPA: 8.5</span>
+            </div>
+
+            <div class="timeline-item reveal" style="transition-delay: 0.15s">
+                <span class="timeline-date">Mar 2020 — Mar 2022</span>
+                <h3>12th Grade</h3>
+                <p>Ms. College, Motihari, Bihar</p>
+                <span class="timeline-grade">75%</span>
+            </div>
+
+            <div class="timeline-item reveal" style="transition-delay: 0.3s">
+                <span class="timeline-date">Jun 2010 — Mar 2020</span>
+                <h3>10th Grade</h3>
+                <p>Jnan Jyoti School, Ghorasahan, Bihar</p>
+                <span class="timeline-grade">87%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <div class="section-header reveal">
+            <span class="section-tag">// Let's Connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+            <a href="mailto:dilipkumar2832005@gmail.com" class="contact-card reveal" style="transition-delay: 0.1s">
+                <span class="contact-icon">📧</span>
+                <h3>Email</h3>
+                <p>dilipkumar2832005@gmail.com</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/dilip-kumar18" target="_blank" rel="noopener"
+                class="contact-card reveal" style="transition-delay: 0.2s">
+                <span class="contact-icon">💼</span>
+                <h3>LinkedIn</h3>
+                <p>dilip-kumar18</p>
+            </a>
+
+            <a href="https://github.com/dilsec20/" target="_blank" rel="noopener" class="contact-card reveal"
+                style="transition-delay: 0.3s">
+                <span class="contact-icon">🐙</span>
+                <h3>GitHub</h3>
+                <p>dilsec20</p>
+            </a>
+
+            <a href="tel:+917297928143" class="contact-card reveal" style="transition-delay: 0.4s">
+                <span class="contact-icon">📱</span>
+                <h3>Phone</h3>
+                <p>+91 7297928143</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>Designed & Built with <span class="heart">❤</span> by Dilip Kumar — 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

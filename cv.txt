@@ -1,0 +1,44 @@
+Dilip Kumar
+LinkedIn: https://www.linkedin.com/in/dilip-kumar18                                                         Email: dilipkumar2832005@gmail.com GitHub :  https://github.com/dilsec20/                                                                                              Mobile no: +91 - 7297928143
+SKILLS
+•	Languages:                                C++, Python
+•	Core Concepts:                          DSA, Competitive Programming, OOPs, Full-Stack Development 
+•	Systems & OS:                           Linux, Windows
+•	Databases:                                 SQL, PostgreSQL
+•	Networking & Security:             TCP/IP, Routing, Switching, VPN, Firewalls, TLS, Ethical Hacking
+•	Platforms & Tools:                     Git & GitHub, VS Code, AWS
+•	Soft Skills:                                   Problem Solving, Team Collaboration, Adaptability
+ PROJECTS	
+      Placement Preparation Portal: Node.js, PostgreSQL, REST APIs, JWT, React | GitHub | Live Demo             Jun’ 25
+•	Engineered a robust RESTful API handling authentication, problem management, and contest logic, secured with JWT (JSON Web Tokens) and crypt password hashing.
+•	Solved the "Duplicate Data" migration challenge by writing custom PowerShell and Node.js migration scripts to seamlessly transfer local development data to the production cloud database without data loss.
+•	Optimized SQL queries for the Leaderboard and Statistics endpoints to ensure low-latency responses even with growing submission datasets.
+•	Created a "Contest Simulation" system with automated timers and real-time score calculation, handling edge cases for late submissions and difficulty weighting.
+
+      Gemini-Powered Rubik’s Cube Simulator: JavaScript, Gemini API, HTML, CSS | GitHub | Live Demo           Oct’ 25             
+•	Integrated Google Gemini API to create a context-aware AI companion that provides real-time commentary, coaching tips based on move history, and algorithmic pattern generation.
+•	Implemented "Smart View-Aware" controls using 3D vector mathematics to map directional inputs to the cube's orientation relative to the camera, ensuring intuitive UX from any angle.
+•	Designed a responsive, futuristic UI using Tailwind CSS, utilizing glass morphism and CSS animations to ensure performance across desktop and mobile devices.
+
+TRAINING 
+    DSA Summer Bootcamp — CodeQuest:  Certificate                                                                                            Jul’ 25
+     Lovely Professional University 
+•	Learned core DSA concepts using C++ including arrays, linked lists, stacks, queues, trees, graphs, heaps, sorting, searching, backtracking, recursion, and dynamic programming.
+•	Covered advanced topics such as graph algorithms, tries, and segment trees.
+•	Participated in hands-on coding sessions, real-world problem-solving, and mini competitive programming contests.
+CERTIFICATE
+•	Ethical Hacking | NPTEL | Link                                                                                                                      Oct’ 25 
+•	Fundamentals of Network Communication | Coursera |                                                                                Oct’ 24                                                                                                                         
+•	Introduction to Hardware and Operating Systems | Coursera | Link                                                             Sep’ 24                                                                             
+ACHIEVEMENTS
+•	Solved 1000+ DSA problems across LeetCode, Codeforces, CodeChef and other platforms.                    
+•	CodeChef — 3★ Coder (1723) | Link  
+•	Codeforces — Specialist (1475) | Link                                                                                                                                             
+•	LeetCode Rating — Knight (1892) | Link                                                                                          	           
+EDUCATION
+   Bachelor of Technology – Computer Science and Engineering                                                             Phagwara, Punjab
+   Lovely Professional University, Phagwara, Punjab CGPA: 8.5                                                                        Aug’23 - Present
+      12th Grade                                                                                                                                                                  Motihari, Bihar                                                                                                                                                                        
+   Ms. College, Motihari, Bihar Percentage: 75%                                                                                                        Mar’20 - Mar’22
+   10th Grade                                                                                                                                                              Ghorasahan, Bihar
+   Jnan Jyoti School, Ghorasahan, Bihar Percentage: 87%                                                                                     Jun’10 – Mar’20
