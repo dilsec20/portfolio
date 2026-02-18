@@ -251,18 +251,8 @@
     })
     .catch(() => { /* Keep defaults */ });
 
-  // CodeChef — via cp-rating-api proxy (wrapped in allorigins for CORS)
-  fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent('https://cp-rating-api.vercel.app/codechef/cp_coder06')}`)
-    .then(r => r.json())
-    .then(data => {
-      const rating = parseInt(data.rating) || 1723;
-      const stars = data.stars || 3;
-
-      updateRatingElement('hero-cc-rating', rating);
-      updateRatingElement('ach-cc-rating', rating);
-      updateLabel('ach-cc-label', stars + '★ Coder');
-    })
-    .catch(() => { /* Keep defaults */ });
+  // CodeChef — No reliable CORS-friendly public API available.
+  // Rating is kept as the hardcoded value in HTML (update manually after contests).
 
   // ===== ANIMATED COUNTERS =====
   // Small delay to allow API responses to update data-count before animation
