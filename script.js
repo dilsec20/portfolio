@@ -251,8 +251,8 @@
     })
     .catch(() => { /* Keep defaults */ });
 
-  // CodeChef — via cp-rating-api proxy (CORS-friendly)
-  fetch('https://cp-rating-api.vercel.app/codechef/cp_coder06')
+  // CodeChef — via cp-rating-api proxy (wrapped in allorigins for CORS)
+  fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent('https://cp-rating-api.vercel.app/codechef/cp_coder06')}`)
     .then(r => r.json())
     .then(data => {
       const rating = parseInt(data.rating) || 1723;
