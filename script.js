@@ -206,29 +206,90 @@
   }
   typeWriter();
 
-  // ===== ANIMATED COUNTERS =====
-  const counters = document.querySelectorAll('[data-count]');
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !entry.target.dataset.counted) {
-        entry.target.dataset.counted = 'true';
-        const target = parseInt(entry.target.dataset.count);
-        const suffix = entry.target.dataset.suffix || '';
-        let current = 0;
-        const increment = Math.ceil(target / 60);
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-            current = target;
-            clearInterval(timer);
-          }
-          entry.target.textContent = current + suffix;
-        }, 25);
-      }
-    });
-  }, { threshold: 0.5 });
+  // ===== LIVE RATING FETCHER =====
+  // Fetches real-time ratings from Codeforces, LeetCode, and CodeChef APIs
+  // and updates the data-count attributes before counter animation triggers.
 
-  counters.forEach(c => counterObserver.observe(c));
+  function updateRatingElement(id, value) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.setAttribute('data-count', value);
+    }
+  }
+
+  function updateLabel(id, text) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  }
+
+  // Codeforces — Official public API
+  fetch('https://codeforces.com/api/user.info?handles=reze69arc')
+    .then(r => r.json())
+    .then(data => {
+      if (data.status === 'OK' && data.result && data.result.length > 0) {
+        const user = data.result[0];
+        const rating = user.rating || 1475;
+        const rank = user.rank || 'specialist';
+        const rankLabel = rank.charAt(0).toUpperCase() + rank.slice(1);
+
+        updateRatingElement('ach-cf-rating', rating);
+        updateLabel('ach-cf-label', rankLabel);
+      }
+    })
+    .catch(() => { /* Keep defaults */ });
+
+  // LeetCode — via alfa-leetcode-api proxy (CORS-friendly)
+  fetch('https://alfa-leetcode-api.onrender.com/reze_arc69/contest')
+    .then(r => r.json())
+    .then(data => {
+      const rating = Math.round(data.contestRating) || 1892;
+      const badge = (data.contestBadges && data.contestBadges.name) || 'Knight';
+
+      updateRatingElement('hero-lc-rating', rating);
+      updateRatingElement('ach-lc-rating', rating);
+      updateLabel('ach-lc-label', badge + ' Badge');
+    })
+    .catch(() => { /* Keep defaults */ });
+
+  // CodeChef — via cp-rating-api proxy (CORS-friendly)
+  fetch('https://cp-rating-api.vercel.app/codechef/cp_coder06')
+    .then(r => r.json())
+    .then(data => {
+      const rating = parseInt(data.rating) || 1723;
+      const stars = data.stars || 3;
+
+      updateRatingElement('hero-cc-rating', rating);
+      updateRatingElement('ach-cc-rating', rating);
+      updateLabel('ach-cc-label', stars + '★ Coder');
+    })
+    .catch(() => { /* Keep defaults */ });
+
+  // ===== ANIMATED COUNTERS =====
+  // Small delay to allow API responses to update data-count before animation
+  setTimeout(() => {
+    const counters = document.querySelectorAll('[data-count]');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.dataset.counted) {
+          entry.target.dataset.counted = 'true';
+          const target = parseInt(entry.target.dataset.count);
+          const suffix = entry.target.dataset.suffix || '';
+          let current = 0;
+          const increment = Math.ceil(target / 60);
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+            entry.target.textContent = current + suffix;
+          }, 25);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(c => counterObserver.observe(c));
+  }, 1500);
 
   // ===== SCROLL REVEAL =====
   const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');

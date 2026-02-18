@@ -82,7 +82,12 @@ Currently: Building projects & grinding problems 🔥
 </p>
 
 <p align="center">
-  <img src="https://leetcard.jacoblin.cool/reze_arc69?theme=dark&font=Outfit&ext=contest" width="500" />
+  <a href="https://leetcode.com/u/reze_arc69/">
+    <img src="https://leetcard.jacoblin.cool/reze_arc69?theme=dark&font=Outfit&ext=contest" width="48%" />
+  </a>
+  <a href="https://codeforces.com/profile/reze69arc">
+    <img src="https://codeforces-readme-stats.vercel.app/api/card?username=reze69arc&theme=github_dark" width="48%" />
+  </a>
 </p>
 
 ---
