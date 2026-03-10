@@ -173,11 +173,11 @@
   // ===== TYPEWRITER EFFECT =====
   const typedEl = document.querySelector('.typed-text');
   const titles = [
-    'Full-Stack Developer',
+    'Software Developer',
     'Competitive Programmer',
     'Problem Solver',
-    'Cybersecurity Enthusiast',
-    'DSA Expert'
+    'Backend Developer',
+    'System Design Enthusiast'
   ];
   let titleIndex = 0;
   let charIndex = 0;
